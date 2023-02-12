@@ -20,31 +20,33 @@
       <h1 class="header__title">Time Tracking Dashboard</h1>
       <nav class="header-nav">
         <ul class="header-nav-list">
-          <li><button type="button" class="daily">Daily</button></li>
-          <li><button type="button" class="weekly">Weekly</button></li>
-          <li><button type="button" class="monthly">Monthly</button></li>
+          <li>
+            <button type="button" class="btn" data-timeframes="daily">
+              Daily
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" data-timeframes="weekly">
+              Weekly
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn" data-timeframes="monthly">
+              Monthly
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <article class="work">
-        <div class="card">
-          <h3>Work</h3>
-          <h2>32hrs</h2>
-          <p class="option">...</p>
-          <p>Last Week - 36hrs</p>
-        </div>
-      </article>
-      <article class="play">
-        <div class="card">
-          <h3>Play</h3>
-          <h2>10hrs</h2>
-          <p class="option">...</p>
-          <p>Last Week - 8hrs</p>
-        </div>
-      </article>
-    </main>
+    <main class="cards-container"></main>
+
+    <footer>
+      <form>
+        <input type="text" id="newCardTitle" placeholder="Enter card title" />
+        <button type="submit" id="addCardBtn">Add</button>
+      </form>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

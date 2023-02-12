@@ -14,23 +14,16 @@ body {
   color: white;
   padding: 40px 15px 40px 15px;
 }
-article {
+.card {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-}
-.work {
-  background-color: hsl(15, 100%, 70%);
   height: 150px;
   border-radius: 10px;
 }
-.play {
-  background-color: hsl(195, 74%, 62%);
-  height: 150px;
-  border-radius: 10px;
-}
-.card {
+
+.card-inner {
   background-color: hsl(235, 46%, 20%);
   height: 75%;
   border-radius: 10px;
@@ -54,12 +47,14 @@ p {
   grid-column: 2/3;
   align-self: start;
 }
-.option {
-  justify-self: end;
-  align-self: end;
-}
+
 button {
   background: none;
   color: white;
   border: none;
+}
+
+.option {
+  justify-self: end;
+  align-self: end;
 }
