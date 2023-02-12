@@ -1,5 +1,12 @@
 let timeTracking;
-
+const logoArray = [
+  './images/icon-work.svg" alt="icon of schoolbag',
+  './images/icon-play.svg" alt="icon of controller',
+  './images/icon-study.svg" alt="icon of book',
+  './images/icon-exercise.svg" alt="icon of signalman',
+  './images/icon-social.svg" alt="icon of speech bubble',
+  './images/icon-self-care.svg" alt="icon of heart with the medial cross',
+];
 // Create a color array for card's background
 const colorArray = [
   "hsl(15, 100%, 70%)",
@@ -41,12 +48,11 @@ const cardsContainer = document.querySelector(".cards-container");
 let currentTimeframe = "daily";
 
 const buttons = document.querySelectorAll(".btn");
-
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     currentTimeframe = button.dataset.timeframes;
+
     updateCards();
-    console.log("click");
   });
 });
 
@@ -56,28 +62,27 @@ const updateCards = () => {
 
   timeTracking.forEach((activity) => {
     let color;
+    let logo;
 
     if (colorIndex < colorArray.length) {
       color = colorArray[colorIndex];
+      logo = logoArray[colorIndex];
     } else if (assignedColors.length === 0) {
-      console.log(colorIndex);
-      console.log(assignedColors);
       addRandomColor();
       color = assignedColors[colorIndex - 6];
     } else {
       addRandomColor();
-      console.log(colorIndex);
-      console.log(assignedColors);
+
       color = assignedColors[colorIndex - 6];
     }
 
     cardsHtml += `
-      <div class="card" id="${activity.title.toLowerCase()}" style="background-color: ${color};">
+      <div class="card" id="${activity.title.toLowerCase()}" style="background-color: ${color};background-image: url(${logo});">
         <div class="card-inner">
           
             <h3 class="card-title">${activity.title}</h3>
             <details class="option">
-              <summary>...</summary>
+              <summary><img src="./images/icon-ellipsis.svg" alt="icon of ellipsis"/></summary>
               
             </details>
           
@@ -99,7 +104,6 @@ const updateCards = () => {
 };
 
 const addCardBtn = document.querySelector("#addCardBtn");
-
 addCardBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
