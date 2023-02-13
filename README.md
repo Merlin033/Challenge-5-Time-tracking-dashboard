@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/Merlin033/Challenge-5-Time-tracking-dashboard.git)
-- Live Site URL: [](https://challenge-5-time-tracking-dashboard.vercel.app/)
+- Solution URL: [https://github.com/Merlin033/Challenge-5-Time-tracking-dashboard.git]
+- Live Site URL: [https://challenge-5-time-tracking-dashboard.vercel.app/]
 
 ## My process
 
@@ -82,7 +82,7 @@ addCardBtn.addEventListener("click", (event) => {
 
 ### Continued development
 
-Je dois continuer à manipuler les flexboxs et les grids pour que leur utilisation me vienne plus naturellement.
+I have to keep working with flexboxs and grids to make their use more natural.
 
 ### Useful resources
 
