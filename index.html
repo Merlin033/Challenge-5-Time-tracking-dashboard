@@ -12,65 +12,67 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | Time tracking dashboard</title>
+    <title>Merlin033 | Time tracking dashboard</title>
   </head>
 
   <body>
-    <header class="header">
-      <nav class="header-nav">
-        <div class="profil">
-          <img
-            src="./images/image-jeremy.png"
-            id="picture"
-            alt="profile picture"
-          />
-          <p class="intro">Report for</p>
+    <main>
+      <header class="header">
+        <nav class="header-nav">
+          <div class="profil">
+            <img
+              src="./images/image-jeremy.png"
+              id="picture"
+              alt="profile picture"
+            />
+            <p class="intro">Report for</p>
 
-          <h1>Jeremy Robson</h1>
-        </div>
-        <ul class="header-nav-list">
-          <li>
-            <button
-              type="button"
-              class="btn"
-              id="daily"
-              data-timeframes="daily"
-            >
-              Daily
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="btn"
-              id="weekly"
-              data-timeframes="weekly"
-            >
-              Weekly
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              class="btn"
-              id="monthly"
-              data-timeframes="monthly"
-            >
-              Monthly
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
+            <h1>Jeremy Robson</h1>
+          </div>
+          <ul class="header-nav-list">
+            <li>
+              <button
+                type="button"
+                class="btn"
+                id="daily"
+                data-timeframes="daily"
+              >
+                Daily
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="btn"
+                id="weekly"
+                data-timeframes="weekly"
+              >
+                Weekly
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="btn"
+                id="monthly"
+                data-timeframes="monthly"
+              >
+                Monthly
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-    <main class="cards-container"></main>
+      <div class="cards-container"></div>
 
-    <footer>
-      <form>
-        <input type="text" id="newCardTitle" placeholder="Enter card title" />
-        <button type="submit" id="addCardBtn">Add</button>
-      </form>
-    </footer>
+      <footer>
+        <form>
+          <input type="text" id="newCardTitle" placeholder="Enter card title" />
+          <button type="submit" id="addCardBtn">Add</button>
+        </form>
+      </footer>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
